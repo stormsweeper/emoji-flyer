@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Emoji Flyer</title>
+        <link rel="stylesheet" href="emoji-flyer.css" type="text/css" />
+        <!-- this helps the emoji display properly -->
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div id="controls">
+            <button id="start-button">Play!</button>
+            <span id="scores">
+                Score: <span id="current-score">0</span>
+                (High: <span id="high-score">0</span>)
+            </span>
+        </div>
+        <!-- all of the game takes place on the stage here -->
+        <div id="stage">
+            <!-- these are the "lanes" but really just backdrop -->
+            <div id="planes" class="lane"></div>
+            <div id="copters" class="lane"></div>
+            <div id="bike-path" class="lane"></div>
+            <div id="road" class="lane"></div>
+            <div id="waterway" class="lane"></div>            
+
+            <!-- this is your player -->
+            <div id="bird" class="sprite">🕊</div>
+        </div>
+        <!-- simple trick: if you put these last, you don't need to do $(document).ready()  -->
+        <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+        <script type="text/javascript" src="emoji-flyer.js"></script>
+    </body>
+</html>
