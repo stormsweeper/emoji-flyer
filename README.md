@@ -17,7 +17,7 @@ JavaScript (including jQuery).
 Use the arrow keys to move the bird around the screen, avoiding obstacles.
 
 Either clone this repo and open index.html, or play here: 
-https://rawgit.com/stormsweeper/emoji-flyer/master/
+https://stormsweeper.github.io/emoji-flyer/
 
 ## How it works
 When the game is started, a timer is started, and each "tick" these steps happen:
